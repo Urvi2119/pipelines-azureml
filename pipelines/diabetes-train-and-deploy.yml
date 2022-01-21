@@ -1,4 +1,9 @@
 variables:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+    architecture: 'x64'
   ml-ws-connection: 'azmldemows' # Workspace Service Connection name
   ml-ws: 'aml-demo' # AML Workspace name
   ml-rg: 'aml-demo' # AML resource Group name
